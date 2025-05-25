@@ -29,4 +29,60 @@ public class MedicalRecord {
     @ManyToOne
     @JoinColumn(name = "doctor_id")
     private Doctor doctor;
+
+    public Long getId() {
+        return id;
+    }
+
+    public LocalDate getDateOfRecord() {
+        return dateOfRecord;
+    }
+
+    public String getDiagnosis() {
+        return diagnosis;
+    }
+
+    public String getTreatment() {
+        return treatment;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setDateOfRecord(LocalDate dateOfRecord) {
+        this.dateOfRecord = dateOfRecord;
+    }
+
+    public void setDiagnosis(String diagnosis) {
+        this.diagnosis = diagnosis;
+    }
+
+    public void setTreatment(String treatment) {
+        this.treatment = treatment;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
 }
